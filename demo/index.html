@@ -207,11 +207,11 @@ $(document).ready(function() {
   'use strict';
   var hls,events, enableStreaming = true, autoRecoverError = false;
   var video = $('#video')[0];
-  video.volume = 0.05;
+  video.volume = 1;
 
   var manifest = decodeURIComponent(location.search.split('src=')[1]);
   if(manifest === 'undefined') {
-    manifest = '//pgc.prototypes.ru/store/audio/561bb34d-0000-0018-0000-0001d6b72f24.128.m3u8';
+    manifest = '//pgc.prototypes.ru/store/audio/56011952-0000-0018-0000-0001c939a1cf.128.m3u8';
   }
   loadStream(manifest);
 
